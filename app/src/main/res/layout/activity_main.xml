@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.zhenglianfu.demo.MainActivity">
+
+    <android.widget.ActionMenuView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bgMenu"
+            android:text="@string/button_1"
+            android:id="@+id/button_1"
+            />
+
+    </android.widget.ActionMenuView>
+</RelativeLayout>
