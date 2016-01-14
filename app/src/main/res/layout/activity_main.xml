@@ -7,15 +7,27 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    tools:context="com.example.zhenglianfu.demo.MainActivity">
-
+    tools:context="com.example.zhenglianfu.demo.view.MainActivity">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_list"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:isScrollContainer="true"
+        android:divider="@color/main_listview_divider"
+        android:dividerHeight="@dimen/list_divide_height"
+        android:layout_above="@+id/view">
+    </ListView>
     <android.widget.ActionMenuView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@color/bgMenu"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:id="@+id/view">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

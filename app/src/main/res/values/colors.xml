@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="bgMenu">#4ae</color>
+    <color name="main_bgScrollView">#9d5</color>
+    <color name="main_listview_divider">#333</color>
 </resources>
