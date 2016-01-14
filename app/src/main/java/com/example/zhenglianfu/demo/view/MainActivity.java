@@ -1,17 +1,30 @@
-package com.example.zhenglianfu.demo;
+package com.example.zhenglianfu.demo.view;
 
 import android.app.Dialog;
+import android.app.LauncherActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.ScrollView;
+
+import com.example.zhenglianfu.demo.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     protected Dialog defaultDialog;
+
+    protected ListView listView;
+
+    protected ScrollView scrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button lastButton = (Button)findViewById(R.id.button_3);
+        // scrollView listView
+        this.listView = (ListView)findViewById(R.id.main_list);
+        this.fillList(null);
         return this;
     }
 
@@ -73,5 +89,15 @@ public class MainActivity extends AppCompatActivity {
 
     private Dialog createDialog(Context context){
         return this.createDialog(context, false);
+    }
+
+    private ListView fillList(List<Object> list){
+        // 测试
+        List<String> testList = new ArrayList<String>(20);
+        for (int i = 0; i < 20; i+=1) {
+            testList.add("item" + (i + 1));
+        }
+        this.listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, testList));
+        return this.listView;
     }
 }
