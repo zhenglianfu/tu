@@ -3,4 +3,7 @@
     <string name="button_1">btn 1</string>
     <string name="button_2">btn 2</string>
     <string name="button_3">btn 3</string>
+    <string name="dial">打电话</string>
+    <string name="mami">妈蜜</string>
+    <string name="title_activity_second">SecondActivity</string>
 </resources>

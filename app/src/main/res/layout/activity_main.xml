@@ -7,9 +7,23 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    tools:context="com.example.zhenglianfu.demo.view.MainActivity">
+    tools:context="com.example.zhenglianfu.demo.activity.MainActivity">
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="hello world"/>
+      android:text="hello world"
+      android:id="@+id/text"/>
+  <Button
+      android:layout_below="@+id/text"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="@string/dial"
+      android:id="@+id/alert_btn"
+      ></Button>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/mami"
+      android:layout_below="@+id/alert_btn"
+      android:id="@+id/mami_btn"/>
 </RelativeLayout>
